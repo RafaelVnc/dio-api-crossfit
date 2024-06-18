@@ -1,6 +1,6 @@
 from typing import Annotated
 from pydantic import BaseModel, Field, PositiveFloat
-from dio_fastapi_crossfit.contrib.schemas import BaseSchema
+from dio_fastapi_crossfit.contrib.schemas import BaseSchema, OutMixin
 
 
 class Atleta(BaseSchema):
@@ -10,3 +10,10 @@ class Atleta(BaseSchema):
     peso: Annotated[PositiveFloat, Field(description='Peso do atleta', example=75.5)]
     Altura: Annotated[PositiveFloat, Field(description='Altura do atleta', example=1.70)]
     sexo: Annotated[str, Field(description='Sexo do atleta', example='M', max_length=1)]
+
+class AtletaIn(Atleta):
+    pass
+
+
+class AtletaOut(Atleta, OutMixin):
+    pass

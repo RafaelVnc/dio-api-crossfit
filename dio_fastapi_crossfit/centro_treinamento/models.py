@@ -1,5 +1,6 @@
 from sqlalchemy import Integer, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from dio_fastapi_crossfit.atleta.models import AtletaModel
 from dio_fastapi_crossfit.contrib.models import BaseModel
 
 

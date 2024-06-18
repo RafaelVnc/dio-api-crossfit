@@ -1,5 +1,5 @@
 run:
-	@uvicorn workout_api.main:app --reload
+	@uvicorn dio_fastapi_crossfit.main:app --reload
 
 create-migrations:
 	@alembic revision --autogenerate -m $(d)

@@ -1,0 +1,3 @@
+from dio_fastapi_crossfit.categorias.models import CategoriaModel
+from dio_fastapi_crossfit.centro_treinamento.models import CetroTreinamentoModel
+from dio_fastapi_crossfit.atleta.models import AtletaModel
