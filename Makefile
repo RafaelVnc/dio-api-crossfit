@@ -1,8 +1,8 @@
 run:
-	@uvicorn dio_fastapi_crossfit.main:app --reload
+	@uvicorn workout_api.main:app --reload
 
 create-migrations:
-	@alembic revision --autogenerate -m $(d)
+	@PYTHONPATH=$PYTHONPATH:$(pwd) alembic revision --autogenerate -m $(d)
 
 run-migrations:
-	@alembic upgrade head
+	@PYTHONPATH=$PYTHONPATH:$(pwd) alembic upgrade head
