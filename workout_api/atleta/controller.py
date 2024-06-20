@@ -56,8 +56,8 @@ async def post(
         await db_session.commit()
     except Exception:
         raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, 
-            detail='Ocorreu um erro ao inserir os dados no banco'
+            status_code=status.HTTP_303_SEE_OTHER, 
+            detail=f'Já existe um atleta cadastrado com o cpf: {atleta_in.cpf}'
         )
 
     return atleta_out

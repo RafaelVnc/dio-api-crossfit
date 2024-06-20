@@ -1,15 +1,7 @@
-# FastAPI
-### Quem é o FastAPi?
-Framework FastAPI, alta performance, fácil de aprender, fácil de codar, pronto para produção.
-FastAPI é um moderno e rápido (alta performance) framework web para construção de APIs com Python 3.6 ou superior, baseado nos type hints padrões do Python.
-
-### Async
-Código assíncrono apenas significa que a linguagem tem um jeito de dizer para o computador / programa que em certo ponto, ele terá que esperar por algo para finalizar em outro lugar
-
-# Projeto
+# Projeto dio-api-crossfit
 ## WorkoutAPI
 
-Esta é uma API de competição de crossfit chamada WorkoutAPI (isso mesmo rs, eu acabei unificando duas coisas que gosto: codar e treinar). É uma API pequena, devido a ser um projeto mais hands-on e simplificado nós desenvolveremos uma API de poucas tabelas, mas com o necessário para você aprender como utilizar o FastAPI.
+Esta é uma API de competição de crossfit chamada WorkoutAPI. É uma API pequena, devido a ser um projeto mais hands-on e simplificado, foi desenvolvido uma API de poucas tabelas, mas com o necessário para aprender como utilizar o FastAPI. Realizado durante o Python AI Backend Developer Bootcamp por [digitalinnovationone](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjA1a6LjuOFAxVgr5UCHUirCaYQjBB6BAgMEAE&url=https%3A%2F%2Fweb.dio.me%2F&usg=AOvVaw0dwYA1hr1DsZZOmIkcAAcc&opi=89978449) e VIVO.
 
 ## Modelagem de entidade e relacionamento - MER
 ![MER](/mer.jpg "Modelagem de entidade e relacionamento")
@@ -54,22 +46,6 @@ make run
 ```
 e acesse: http://127.0.0.1:8000/docs
 
-# Desafio Final
-    - adicionar query parameters nos endpoints
-        - atleta
-            - nome
-            - cpf
-    - customizar response de retorno de endpoints
-        - get all
-            - atleta
-                - nome
-                - centro_treinamento
-                - categoria
-    - Manipular exceção de integridade dos dados em cada módulo/tabela
-        - sqlalchemy.exc.IntegrityError e devolver a seguinte mensagem: “Já existe um atleta cadastrado com o cpf: x”
-        - status_code: 303
-    - Adicionar paginação utilizando a lib: fastapi-pagination
-        - limit e offset
 # Referências
 
 FastAPI: https://fastapi.tiangolo.com/
@@ -79,5 +55,3 @@ Pydantic: https://docs.pydantic.dev/latest/
 SQLAlchemy: https://docs.sqlalchemy.org/en/20/
 
 Alembic: https://alembic.sqlalchemy.org/en/latest/
-
-Fastapi-pagination: https://uriyyo-fastapi-pagination.netlify.app/
